@@ -70,6 +70,7 @@ def gross_per_studio(collection)
   binding.pry
     if new_hash[movie_data][:studio][:worldwide_gross]
       new_hash[movie_data[:studio]] += movie_data[:worldwide_gross] do
+      end
   i += 1
   end
   new_hash
