@@ -68,8 +68,8 @@ def gross_per_studio(collection)
   while i < collection.count
   movie_data = collection[i]
   #binding.pry
-    if new_hash[movie_data][:studio][:worldwide_gross]
-      new_hash[movie_data[:studio]] += movie_data[:worldwide_gross]
+    if new_hash[movie_data][:studio][:worldwide_gross] == [:studio][:worldwide_gross]
+    do new_hash[movie_data[:studio]] += movie_data[:worldwide_gross]
       end
   i += 1
   end
